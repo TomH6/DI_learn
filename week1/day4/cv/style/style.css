@@ -1,0 +1,72 @@
+body{
+    padding: 10px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(114, 104, 104));
+    
+}
+#container{
+    width: 80%;
+    margin: 0 auto;
+}
+#top{
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    height: 250px;
+    display: flex;
+    border: 2px solid #888;
+}
+#hello{
+    position: absolute;
+    margin-left: 10%;
+}
+#myPic{
+    position: absolute;
+    margin-left: 70%;
+    border-bottom: 8px solid orange;    
+}
+.name{
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    border-bottom: 2px solid orange;
+}
+.lastName{
+    font-size: 45px;
+    font-weight: 600;
+}
+#main{
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    height: 525px;
+    display: flex;
+    border: 2px solid #888;
+}
+#left{
+    position: absolute;
+    margin-left: 10%;
+}
+h2{
+    letter-spacing: 3px;
+    border-bottom: 2px solid orange;
+}
+i{
+    color: orange;
+}
+.links{
+    text-decoration: none;
+    color: black;
+}
+#education{
+    position: absolute;
+    margin-top: 10px;
+}
+#right{
+    position: absolute;
+    margin-left: 60%;
+    margin-right: 50px;    
+}
+.bold{
+    font-weight: bold;
+}
+
