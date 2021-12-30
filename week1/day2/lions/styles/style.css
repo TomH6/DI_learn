@@ -1,0 +1,65 @@
+body{
+    width: 80%;
+    margin: auto; 
+    background-image: url(https://images.pexels.com/photos/6623687/pexels-photo-6623687.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bold{
+    font-weight: bold;
+}
+.yellow{
+    background-color: yellow;
+}
+.italic{
+    font-style: italic;
+}
+h1{
+    text-align: center;
+    font-size: 44px;
+    
+}
+h3{
+    text-decoration: underline;
+}
+p{
+    font-size: 22px;
+}
+.list1{
+    margin-left: 50px;
+}
+.orderd{
+    list-style: upper-roman;
+}
+.kittenImg{
+    width: 50%;
+    border: 2px solid blue;
+    margin: 0 auto;
+}
+.media{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 30%;
+    
+}
+.lionWatch{
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid brown;
+}
+.tableHead{
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    text-shadow: black 2px 2px;
+    font-weight: bold;
+}
+table, th, td{
+    border: 2px solid white;
+    color: white;
+}
+#lionImg{
+    display: flex;
+    justify-content: center;
+}

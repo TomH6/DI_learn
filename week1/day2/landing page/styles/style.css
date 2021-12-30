@@ -1,0 +1,77 @@
+nav{
+    background-color: silver;
+    height: 50px;
+    position: relative;
+    margin-bottom: 0;
+}
+
+h3{
+    display: inline-block;
+    position: absolute;
+    top: 0%;
+    margin-left: 10px;
+}
+
+.btn{
+display: inline-block;
+position: absolute;
+top: 30%;
+right: 10%;
+background-color: rgb(50, 50, 248);
+color: white;
+padding: 5px;   
+}
+
+.main{
+    background-image: url(https://images.pexels.com/photos/1533720/pexels-photo-1533720.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    margin-top: 0;
+    height: 550px;
+    position: relative;
+}
+
+.imgText{
+    color: white;
+    font-size: 26px;
+    font-weight: bolder;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.bottom{
+    background-color: silver;
+    width: 100%;
+    display: table;
+}
+.elements{
+    display: table-row;
+    text-align: center;
+}
+
+.fully{
+    width: 500px;
+    display: table-cell;
+}
+.bootstrap{
+    display: table-cell;
+}
+.easy{
+    display: table-cell;
+}
+i{
+    color: blue;
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 36px;
+}
+

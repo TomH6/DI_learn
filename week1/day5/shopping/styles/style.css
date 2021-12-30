@@ -1,5 +1,31 @@
+body{
+    width: 100%;
+}
+h1{
+    text-align: center;
+}
+#wrap{
+    position: relative;
+    display: flex;
+}
 .items{
-    width: 60px;
-    background-color: pink;
-    margin: 10px;
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    position: relative;
+}
+.new{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+    background-color: red;
+}
+.discount{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%;
+    background-color: blue;
 }
