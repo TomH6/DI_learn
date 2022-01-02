@@ -11,38 +11,38 @@
 </head>
 <body>
     <div id="container">
-        <div id="login">
-            <div id="row">
-                <div id="loginForm">
-                    <h1>Log In</h1>
-                    <form action="#" method="post" id="form">
-                        <input type="email" id="email" name="email" placeholder="email"><br>
-                        <input type="password" id="password" name="password" placeholder="password"><br>
-                        <input type="checkbox" id="remember" name="remember" value="remember">
-                        <label for="remember">Remember me</label>
-                        <a href="#">Forgot password?</a><br>
-                        <input type="submit" value="LOG IN">
-                    </form>
-                </div>
-                <div id="connect">
-                    <p>Or Connenct With</p><br>
+        <div id="left">
+            <h1>Log In</h1>
+            <div id="form">
+                <form action="">
+                    <input type="email" id="email" name="email" placeholder="email" class="area">
+                    <input type="password" id="pass" name="pass" placeholder="password" class="area">
+                    <input type="checkbox" id="check" name="check" value="remember" class="checkbox">
+                    <label for="check" class="checkbox"> Remember Me</label>
+                    <a href="#" class="link">Fogot password?</a>
+                    <input type="submit" value="Log In" class="login">
+                </form>
+            </div>
+            <div id="social">
+                <h3>Or Connect with</h3>
+                <div id="logos">
                     <i class="fab fa-facebook"></i>
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-github"></i>
                     <i class="fab fa-linkedin"></i>
                 </div>
-                <div id="register">
-                    <i class="fab fa-linkedin"></i>
-                    <h2>Hello, friend!</h2><br>
-                    <p>Enter your personal details and start your journey with us!</p>
-                    <a href="#">Register <i class="fab fa-github"></i></a>
-                </div>
+                <P>&copy; 2020</P>
+            </div>
+        </div>
+        <div id="right">
+            <div id="content">
+                <i class="fas fa-user-plus" id="user"></i>
+                <h2 class="text">Hello, Friend!</h2>
+                <p class="text">Enter Your personal details and start your journey with us</p>
+                <button id="btn">Register <i class="fas fa-arrow-circle-right"></i></button>
             </div>
         </div>
     </div>
-    <footer id="left">
-        <p>C 2020</p>
-    </footer>
+    <script src="https://kit.fontawesome.com/7ba72ed42e.js" crossorigin="anonymous"></script>
 </body>
 </html>
-    

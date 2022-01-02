@@ -1,1 +1,91 @@
+#container{
+    width: 100vh;
+    height: 75vh;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#left{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 50%;
+    background-color: whitesmoke;
+    display: flexbox;
+    align-items: center;
+    text-align: center;
+}
+h1{
+    padding-top: 50px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+#form{
+    position: absolute;
+    display: flexbox;
+    align-items: center;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+}
+.area{
+    background-color:#eeeeee;
+    margin: 6px;
+    border-style: none;
+}
+#email{
+    padding: 10px;    
+}
+#pass{
+    padding: 10px;
+}
+.checkbox{
+    padding: 10px;
+}
+.link{
+    margin-top: 10px;
+}
+.login{
+    margin-top: 1em;
+    width: 100%;
+    background-color: purple;
+    color: white;
+}
+#social{
+    position: absolute;
+    width: 12em;
+    bottom: 0;
+    left: 25%;
+    right: 25%;
+}
+#right{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    background-image: linear-gradient(135deg, black, purple);
+    text-align: center;
+    color: white;
+}
+#content{
+    margin: 100px 0;
+    display:flexbox;
+    align-items: center;
+}
+#user{
+    font-size: 5em;
+}
+.text{
+    margin: 1em;
+}
+#btn{
+    margin-top: 2em;
+    color: white;
+    padding: 1em;
+    border-radius: 25%;
+    background-image: linear-gradient(135deg, black, purple);
+}
 
