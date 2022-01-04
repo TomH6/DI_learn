@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    background-color: #ddd;
+}
+#above{
+    text-align: center;
+    padding: 2em;
+}
+#select{
+    color: blue;
+    background-color: #ddd;
+    border: 2px solid blue;
+    padding: .25em;
+    margin: .25em;
+}
+.grid_area{
+    margin: 2rem auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;  
+}
+@media only screen and (max-width: 730px){
+    .grid_area{
+        display: block;
+        
+    }
+    .grid_item{
+        align-items: center;
+        margin-bottom: 1em;
+    }
+}
+.grid_item{
+    display: flex;
+    flex-direction: column;
+}
+.deal{
+    background-color: whitesmoke;
+    padding: 1em;
+    text-align: center;
+    border-radius: .5em;
+    width: 12rem;
+}
+.icon_deal{
+    font-size: 4rem;
+    color: lightblue;
+}
+.h_deal{
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+.p_deal{
+    text-transform: capitalize;
+    font-style: italic;
+}
+.span_deal{
+    font-size: 2rem;
+}
+.secret{
+    text-transform: capitalize;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.a_deal{
+    color: whitesmoke;
+    background-color: green;
+    text-decoration: none;
+    padding: .5em;
+    border-radius: .25em;
+}
+.disc{
+    font-size: .75em;
+}
+.info{
+    color: whitesmoke;
+    background-color: darkblue;
+    border-radius: .5em;
+    padding: 0 1em;
+    width: 12rem;
+}
+.p_info{
+    text-transform: capitalize;
+}
+.a_info{
+    text-decoration: none;
+    color: whitesmoke;
+    
+}
+
