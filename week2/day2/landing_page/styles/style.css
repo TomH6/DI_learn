@@ -116,7 +116,9 @@ h3{
     width: 4em;
     border-radius: 50%;
     justify-content: center;
-    margin: -2em auto 0;
+    /* margin: -2em auto 0; */
+    left: 8em;
+    bottom: 2em;
     position: relative;
     display: block;
 }

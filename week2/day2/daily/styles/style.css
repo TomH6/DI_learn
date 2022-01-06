@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+}
+#flex_area{
+    width: 100vw;
+    /* display: flex;
+    flex-direction: column; */
+}
+#left_wing{
+    display:flex;
+    flex-direction: column;
+    gap: 4em;
+}
+#center{
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+}
+#right_wing{
+    display: flex;
+    float: right;
+    flex-direction: column;
+    gap: 4em;
+}
+.item_left{
+    
+    background-color: yellow;
+    width: 8rem;
+    height: 8rem;
+}
+.center_item{
+    
+    background-color: yellow;
+    width: 8rem;
+    height: 8rem;
+}
+.right_item{
+  
+    background-color: yellow;
+    width: 8rem;
+    height: 8rem;
+}
