@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html,h1,h2,h3,h4,h5,h6,a{
+    font-family: "Raleway";
+}
+.jumbo{
+    background-image:url("../assets/images/headerback.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.btn-primary{
+    width: 6rem;
+}
+.box{
+    width: 40%;
+    padding-top: 6rem;
+}
+.face{
+    width: 100%;
+} 
+.grid-img{
+    height: 10rem;
+    width: 16rem;
+}

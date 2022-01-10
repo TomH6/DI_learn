@@ -10,10 +10,10 @@
 <body>
     <!--  -----------NAVBAR---------  -->
         <nav class="navbar bg-dark fixed-top navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+            <div class="container-fluid px-4">
               <a class="navbar-brand text-secondary" href="#">Project Excresice #9</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon bg-success"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -23,25 +23,26 @@
                   <li class="nav-item">
                     <a class="nav-link text-secondary" href="#">About</a>
                   </li>
-                  <button type="button" class="btn btn-dark">
-                    Contact <span class="badge bg-secondary">4</span>
-                  </button>
+                  <div class="fluid">
+                    <button type="button" class="btn btn-dark d-flex gap-1">
+                      Contact <span class="badge bg-secondary d-flex">4</span>
+                    </button>
+                  </div>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Dropdown
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                      <li class="bg-dark"><a class="dropdown-item text-secondary" href="#">Action</a></li>
+                      <li class="bg-dark"><a class="dropdown-item text-secondary" href="#">Another action</a></li>
+                      <li class="bg-dark"><hr class="dropdown-divider text-secondary"></li>
+                      <li class="bg-dark"><a class="dropdown-item text-secondary" href="#">Something else here</a></li>
                     </ul>
                   </li>
                 </ul>
                 <form class="d-flex">
                     <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
-                  <label for="inputPassword5" class="form-label">Password</label>
-                  <input type="password" id="inputPassword5" placeholder="password" class="form-control me-2" aria-describedby="passwordHelpBlock">
+                  <input type="password" id="inputPassword5" placeholder="password" class="form-control mx-2" aria-describedby="passwordHelpBlock">
                   <button class="btn btn-outline-success" type="submit">Search</button>
         
                 </form>
