@@ -5,12 +5,12 @@ let favFood = 'Hamburger';
 //Store your favorite meal into a variable (ie. breakfast, lunch or dinner)
 let favMeal = 'Dinner';
 //Console.log I eat <favorite food> at every <favorite meal>
-console.log("I eat" +" "+ favFood +" "+ "at every" +" "+ favMeal);
+console.log(`I eat ${favFood} at every ${favMeal}`); //this is the proper way to concatenat!
 
 //EX2 - part1
 
 //Create a variable named watchedSeriesLength that is equal to the number of series in the watchedSeries array.
-let watchedSeriesLength = 3;
+let watchedSeriesLength = myWatchedSeries.length;
 //Create a variable named myWatchedSeries, that is equal to a sentence describing the series you watched
 let myWatchedSeries = ['black mirror', 'money heist', 'the big bang theory'];
 //Console.log a sentence using both of the variables created above
