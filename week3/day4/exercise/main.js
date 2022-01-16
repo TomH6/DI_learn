@@ -39,12 +39,30 @@ if (num1 % 2 == 0){
 
 //Exercise 4: Group Chat
 //
-let users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000"];
 
-if (users.length === 0){
+
+/*if (users.length === 0){
     console.log("no one is online")
 } else if (users.length <= 2){
     console.log(users)
 } else {
     console.log(users[0], users[1]  + ` and ${users.length-2} more are online`)
-};
+};*/
+let users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000"];
+let whoIsOnline = users.length;
+
+let options = [whoIsOnline == 0, whoIsOnline == 1, whoIsOnline == 2];
+
+switch(options.indexOf(true)){
+    case 0: 
+        console.log("No one is online");
+    break;
+    case 1:
+        console.log(`${users[0]} is online`);
+    break;
+    case 2:
+        console.log(`${users[0]} and ${users[1]} are online`);
+    break;
+    default:
+        console.log(`${users[0]}, ${users[1]}, and ${users.length-2} more are online`);
+}
