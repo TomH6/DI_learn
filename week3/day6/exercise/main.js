@@ -18,6 +18,8 @@ console.log(people.slice(1, -1));
 console.log(people.indexOf("Foo")); //It returns -1 because "Foo" is not part of the array.
 //Create a variable called last which value is the last element of the array.
 let last = people[people.length-1];
+console.log(people);
+console.log(last);
 
 //Part 2
 //Using a loop, iterate through the people array and console.log each person.
