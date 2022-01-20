@@ -56,9 +56,10 @@ function isDivisible(){
             divArray.push(i);
         }
     }
+    console.log(divArray.length);
 }
 isDivisible();
-console.log(divArray.length);
+
 
 
 //EX4
@@ -87,12 +88,14 @@ function myBill(){
             stock[shoppingList[i]]--;
             fruitSum += prices[shoppingList[i]]; //get and store price in varubale 
                 
-        }    
+        }      
     }   
-    return fruitSum; 
+    return fruitSum;
+    
 }   
-   console.log(myBill());
-   console.log(stock); 
+    console.log(myBill());
+    console.log(stock);
+        
 
 
 
