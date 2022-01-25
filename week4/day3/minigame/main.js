@@ -2,6 +2,13 @@ let userNumber;
 let computerNumber;
 let guesses = 1;
 const guessesMax = 3;
+const noNumber = "Sorry Not a number, Goodbye";
+const noGood = "Sorry it's not a good number, Goodbye"; 
+const winner = "WINNER!!";
+const tooBig = "Your number is bigger then the computer's, guess again";
+const tooSmall = "Your number is smaller then the computer's, guess again";
+const tooBad = "Sorry it's not a good number, Goodbye";
+
 
 
 function playTheGame(){
@@ -17,11 +24,11 @@ function playTheGame(){
 
 function checkIfNumber(){
     if (Number.isInteger(userNumber) == false){ 
-        alert("Sorry Not a number, Goodbye");
+        alert(noNumber);
      }else if (userNumber < 0 || userNumber >= 11){
-             alert("Sorry it's not a good number, Goodbye");
+             alert(noGood);
         } else {
-             computerNumber = Math.floor(Math.random() * (10 - 0 + 1)) + 0;
+             computerNumber = Math.floor(Math.random() * 11);
             }
         test();   
 }
@@ -35,16 +42,16 @@ function test(user,computer){
     if (guesses < guessesMax){
         switch(outcome.indexOf(true)){
             case 0: 
-                    alert("WINNER!!");
+                    alert(winner);
                     console.log(`The computer chose ${computerNumber}`)
                     guesses = 1;
                 break;
-            case 1: alert("Your number is bigger then the computer's, guess again");
+            case 1: alert(tooBig);
                     guesses++;
                     
                     tryAgain(computerNumber);
                 break;
-            case 2: alert("Your number is smaller then the computer's, guess again");
+            case 2: alert(tooSmall);
                     guesses++;
                     
                     tryAgain(computerNumber);
@@ -54,10 +61,7 @@ function test(user,computer){
     } else {
         guesses = 1;
         console.log (`number of guesses : ${guesses}`);
-        alert(`Out of luck. By the way, the right number was ${computerNumber}`);
-
-        
-        
+        alert(tooBad);   
     }
 }
 function tryAgain(){ 
@@ -65,19 +69,10 @@ function tryAgain(){
     console.log(`Your number is: ${userNumber}`);
     console.log (`number of guesses : ${guesses}`); 
     if (userNumber === computerNumber){
-        alert("WINNER!!");
+        alert(winner);
         guesses =1;
     } else {
         test();
     }
 }
 
-// function checkIfNumberAgain(){
-//     if (Number.isInteger(secondTry) == false){ 
-//         alert("Sorry Not a number, Goodbye");
-//     }else if (secondTry < 0 || secondTry >= 11){
-//              alert("Sorry it's not a good number, Goodbye");
-//         } else {
-//             return secondTry;
-//           }
-// }
