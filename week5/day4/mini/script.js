@@ -1,11 +1,12 @@
 let colorPicker = document.querySelectorAll('.colors');
-let currentColor = '';
+let currentColor = 'white';
 console.log(currentColor)
 
 for (let index = 0; index < colorPicker.length; index++) {
     const element = colorPicker[index];
+    console.log(colorPicker)
     element.addEventListener('click',(e)=>{
-        e.target.style.backgroundColor = currentColor
+        currentColor = e.target.style.backgroundColor 
         console.log(currentColor)
         console.log(e.target.style.backgroundColor)
     })
@@ -26,7 +27,7 @@ for (let index = 0; index < tocolor.length; index++) {
     const element = tocolor[index];
     element.addEventListener('mouseover', (e)=>{
         if(mousedown){
-            currentColor = e.target.style.backgroundColor
+            e.target.style.backgroundColor = currentColor
         }  
     })
 }

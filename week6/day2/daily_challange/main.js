@@ -38,11 +38,11 @@ console.log(result)
 //Create an array using forEach that contains the usernames of all players with a score bigger than 5. 
 //Use the ternary operator
 
-let winners = gameInfo.map( a => a.score);
-console.log(winners);
-winners.forEach(element => {
-    return (element > 5
-        ?console.log('high')
-        :console.log('low'))
-});
-console.log(winners);
+// let winners = gameInfo.map( a => a.score);
+// console.log(winners);
+// winners.forEach(element => {
+//     return (element > 5
+//         ?console.log("")
+//         :winners.splice(element))
+// });
+// console.log(winners);

@@ -37,7 +37,7 @@
 // function q32() {
 //     alert(a);
 // }
-// 0
+// is Not Defined
 
 
 //#4
@@ -58,12 +58,19 @@
 // // alert(a);
 
 //EX 2
-const winBattle = (experiencePoints) => {
-    return (experiencePoints ? 10 : 1);  
-} 
-console.log(winBattle(true));
-console.log(winBattle(false));
-var experiencePoints;
+let winBattle = ()=>true
+let experiencePoints = winBattle()
+?10
+:1
+console.log(experiencePoints);
+// const winBattle = (experiencePoints) => {
+//     console.log(experiencePoints)
+//     return (experiencePoints 
+//             ?10 
+//             :1);  
+// };
+// console.log(winBattle(true));
+// console.log(winBattle(false));
 //Transform the winBattle() function to an arrow function
 //Create a variable called experiencePoints
 //Assign to this variable, a ternary operator. If winBattle() is true, the experiencePoints 
@@ -75,10 +82,10 @@ var experiencePoints;
 //Write a JavaScript arrow function that checks whether the value of the argument passed, 
 //is a string or not. Use ternary operator
 //Check out the example below to see the expected output
-
-const isString = (el) => {
-    return( /^[a-zA-Z]+$/.test(el) ?true :false)
-}
+let isString = (toTest) => typeof toTest==="string"
+// const isString = (el) => {
+//     return( /^[a-zA-Z]+$/.test(el) ?true :false)
+// }
 console.log(isString('hello'));
 console.log(isString([1, 2, 4, 0]));
 
@@ -112,28 +119,37 @@ console.log((colors.includes("Violet") ?"YEAH!!" :"No.."))
 let color = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
 let ordinal = ["th","st","nd","rd"];
 
-color.forEach (function (e, i){
-     return (i > 2 
+color.forEach ((e, i)=>{
+      (i > 2 
         ?console.log(`${i+1}${ordinal[0]} choise is ${e}`)
         :console.log(`${i+1}${ordinal[i+1]} choise is ${e}`))
 }) 
 
 //EX 6
-let bankAmount = 1000;
-let vatIncluded;
-let expenses = ["+200", "-100", "+146", "+167", "-2900"];
-const addVatToExpense = () => {
-    expenses.forEach(function (exp){
-       let expense = parseInt(exp) 
-        vatIncluded = expense + expense*0.17;
-        bankAmount += vatIncluded;
-        // console.log(expense)
-        // console.log(vatIncluded)
-        // console.log(bankAmount)
-        return bankAmount;
-    })
-}
-addVatToExpense()
-console.log(bankAmount)
+// let bankAmount = 20000;
+// let vatIncluded;
+// let expenses = ["+200", "-100", "+146", "+167", "-2900"];
+// const addVatToExpense = () => {
+//     expenses.forEach(function (exp){
+//        let expense = parseInt(exp) 
+//         vatIncluded = expense + expense*0.17;
+//         bankAmount += vatIncluded;
+//         // console.log(expense)
+//         // console.log(vatIncluded)
+//         // console.log(bankAmount)
+//         return bankAmount;
+//     })
+// }
+// addVatToExpense()
+// console.log(bankAmount)
+
+//******BETTER WAY *******//
+
+let bankAmount = 20000;
+const vat = 0.17;
+let details = [+200, -100, +146, +167, -2900];
+let detailsVatIncluded = details.map((expense=>expense*(1+vat)));
+bankAmount = detailsVatIncluded.reduce((prev, curr)=>prev+curr,bankAmount)
+console.log(bankAmount);
 
 
