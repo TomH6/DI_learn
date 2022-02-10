@@ -7,8 +7,13 @@ console.log(addTwoNums(60,10))
 //EX2
 //Create a function that receives a weight in kilograms and returns it in grams.
 //First, use function declaration and invoke it.
-const KiloToGrams = (kilo) => (kilo*1000);
-console.log(KiloToGrams(66));
+
+// const KiloToGrams = (kilo) => (kilo*1000);
+// console.log(KiloToGrams(66));
+const kToG = function (kg) {
+    return kg*1000
+}
+
 //Then, use function expression and invoke it.
 (function(kilo){console.log(kilo*1000)}(33));  
 (kilo => console.log(kilo*1000))(33);
@@ -17,8 +22,8 @@ console.log(KiloToGrams(66));
 /* Function expressions allow us to create anonymous functions. they can also be self invoked*/
 
 //Finally, use a one line arrow function and invoke it.
-let grams =  (kilo => kilo*1000)(77);
-console.log(grams);
+let gkToG3 =  kg=>kg*1000
+console.log(gkToG3(88));
 
 //EX3
 //Create a self invoking function that takes 4 arguments: 

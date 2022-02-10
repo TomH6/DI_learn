@@ -1,0 +1,62 @@
+body{
+    background-color: burlywood;
+}
+#top{
+    margin: 0 auto;
+}
+.card{
+    margin: 3em auto;
+    width: 80vw;
+    border: 1em solid goldenrod;
+    background-color: burlywood;
+}
+#btn{
+    margin: 2em auto;
+    font-size: 1.5em;
+    border: .2em solid green;
+    background-color: deepskyblue;
+}
+#grsh{
+    display: flex;
+    justify-content:space-around;
+    margin-right: 28em;
+}
+#quote{
+    font-size: 2em;
+    width: 50%;
+    margin: 1em auto;
+}
+#author{
+    font-size: 1em;
+    width: 50%;
+    margin: 1em auto;
+    float: right;
+    color: cadetblue;
+}
+.row{
+    margin: 0 auto;
+    width: 50%;
+}
+.form-control{
+    width: 50%;
+}
+#buttons{
+    display: flex;
+}
+.bottom_btn{
+    margin: 1em auto;
+    font-size: 1em;
+    border: .2em solid green;
+    background-color: deepskyblue;
+}
+#like{
+    background-color: cornflowerblue;
+}
+#counters{
+    display: flex;
+}
+#answers{
+    display: flex;
+    justify-content: space-between;
+}
+
