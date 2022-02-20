@@ -1,0 +1,27 @@
+body{
+    background-color: goldenrod;
+}
+#top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    background-color: blueviolet;
+}
+#form{
+    display: flex;
+    background-color: blueviolet;
+}
+#submit{
+    height: 80%;
+}
+#bottom{
+    margin-top:2em;
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+}
+.card{
+    width:18rem;
+    border-radius: 5%;
+}
