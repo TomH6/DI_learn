@@ -1,9 +1,4 @@
-function sendLargeNum () {
+module.exports = function() {
     const largeNumber = 356;
-    return largeNumber;
-};
-  
-
-module.exports = {
-    a : 356
-};
+    return largeNumber
+}();

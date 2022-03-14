@@ -1,15 +1,12 @@
 // Create a function that returns the current date and time. Export the module.
-
-function dateTime() {
+const days = ['Sun', 'Mon', 'Tues', 'Wednes', 'Thurs', 'Fri', 'Satur'];
+module.exports = function() {
     let today = new Date();
     let date = `${today.getDate()}/${today.getMonth()+1}/${today.getFullYear()}`;
+    let day = `${days[today.getDay()]}`;
     let time = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
-    let currentDateTime = `${date} ${time}`;
+    let currentDateTime = `The Date And Time Are Currently:${day} ${date} ${time}`;
     return currentDateTime;
-};
-// console.log(dateTime());
-module.exports = {
-    dateTime
-};
+}();
 
 // Use the exported module in a script.js file.
