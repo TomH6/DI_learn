@@ -1,0 +1,34 @@
+<!-- contains a div, where the posts are displayed. Each posts is composed of: -->
+<!-- a link that redirects the user to the specific post in the website https://www.thefactsite.com/
+the publication date (id "pubDate"), creator, category and content of the post -->
+<div>
+    <h1>The Fact Site</h1>
+    <p>Welcome to The Fact Site</p>
+    <div id="posts">
+        <div id="postSpace">
+            <h3>Posts</h3>
+            <% data.forEach(item => { %>
+            <ul>
+                <li>
+                    <h2>
+                        <a href="<%= item.guid %>" target="_blank"> <%= item.title %> </a>
+                    </h2>
+                    <p>
+                        <%= item.pubDate %> ||
+                        <%= item.creator %> ||
+                       categories: <strong><%= item.categories %></strong>
+                    </p>
+                    <div>
+                        <p>
+                            <%= item.contentSnippet %>
+                        </p>
+                    </div>
+                </li>
+                    <hr />
+                <% }) %>
+            </ul>
+        </div>
+    </div>
+</div>
+
+                

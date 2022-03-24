@@ -1,0 +1,31 @@
+<!-- It should include the files head.ejs, header.ejs, posts.ejs and footer.ejs. -->
+<!-- It should contain two forms, to search a post by title and by category (with options). -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('../partial/head'); %>
+    <title>Search</title>
+</head>
+<body>
+    <div id="nav">
+        <%- include('../partial/header'); %>
+    </div>
+    <div id="searches">
+        <div id="title">
+            <form action="" method="get">
+                    <input type="text" id="title" placeholder="search by title">
+                    <input type="submit" value="search">
+            </form>
+        </div>
+            <form action="" method="get">
+                <select class="form-select" id="select">
+                    <option value="" disabled selected>Select by category</option>
+                </select>
+            </form>
+    </div>
+    <%- include('../partial/footer'); %>
+</body>
+</html>
