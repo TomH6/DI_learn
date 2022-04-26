@@ -11,45 +11,49 @@ class App extends React.Component {
   super();
   this.state = {
     users: [],
-    // searchText: ''
+    isLoading: false
   }
   }
   componentDidMount(){
-    fetch('https://jsonplaceholder.typicode.com/users')
-    .then(res => res.json())
-    .then(data=>{
-      this.setState({users: data})
-    })
-    .catch(e=>{
-      console.log(e);
-    })
+    this.setState({isLoading: true}, ()=>{
+      fetch('https://jsonplaceholder.typicode.com/users')
+      .then(res => res.json())
+      .then(data=> this.setState ({
+        isLoading: false,
+        users: data
+      }))
+      .catch(e=>{
+        console.log(e);
+      })
+    })   
   }
-  // handleChange =(e)=>{
-  //     console.log(e.target.value);
-  //     this.setState({searchText:e.target.value})
-  // }
+  
   render(){
-    const {users} = this.state;
+    const {users, isLoading} = this.state;
     const {searchText} = this.props;
-    console.log(users);
-    console.log('searchText: ', searchText);
+  
 
     const filterUsers = users.filter(item=>{
       return item.name.toLowerCase().includes(searchText.toLowerCase())
     })
+    console.log(isLoading)
     return(
       <div className="App">
         <header className="App-header">
           <SearchBox handle={this.props.onChange} />
+          {
+            isLoading ? <h1>Loading..</h1> : null
+          }
           <div>
             {
               filterUsers.map((item, i)=>{
                 return(
-                  <User user={item} key={i} />
+                 <User user={item} key={i} /> 
                 )
               })
             }
           </div>
+          
         </header>
       </div>
     
