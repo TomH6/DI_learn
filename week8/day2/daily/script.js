@@ -5,6 +5,7 @@ function handleSubmit(e) {
     let data = new FormData(e.target);
     let value = Object.fromEntries(data.entries());
     console.log(JSON.stringify(value))
+    document.querySelector('formText').textContent = JSON.stringify(value)
 }
 
 let form = document.querySelector('form');

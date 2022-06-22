@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import './App.css';
 import User from './components/User';
 import SearchBox from './components/SearchBox';
@@ -6,44 +6,33 @@ import {connect} from 'react-redux';
 import 'tachyons';
 import { changeSearchText } from './redux/actions';
 
-class App extends React.Component {
-  constructor(){
-  super();
-  this.state = {
-    users: [],
-    isLoading: false
-  }
-  }
-  componentDidMount(){
-    this.setState({isLoading: true}, ()=>{
+const App = () => {
+  const [users, setUsers] = useState([]);
+  const [searchText, setSearchTxt] = useState('');
+  const [filterUsers, setFilterUsers] = useState([]);
+  useEffect(()=>{
       fetch('https://jsonplaceholder.typicode.com/users')
       .then(res => res.json())
-      .then(data=> this.setState ({
-        isLoading: false,
-        users: data
-      }))
+      .then(data=> {
+        setUsers(data)
+      }) 
       .catch(e=>{
         console.log(e);
       })
-    })   
-  }
+    
+  },[])
   
-  render(){
-    const {users, isLoading} = this.state;
-    const {searchText} = this.props;
-  
-
-    const filterUsers = users.filter(item=>{
+  useEffect(()=>{
+    const filter = users.filter(item=>{
       return item.name.toLowerCase().includes(searchText.toLowerCase())
     })
-    console.log(isLoading)
+    setFilterUsers(filter);
+  },[searchText])
+     
     return(
       <div className="App">
         <header className="App-header">
-          <SearchBox handle={this.props.onChange} />
-          {
-            isLoading ? <h1>Loading..</h1> : null
-          }
+          <SearchBox setSearchTxt={setSearchTxt}/>
           <div>
             {
               filterUsers.map((item, i)=>{
@@ -58,7 +47,6 @@ class App extends React.Component {
       </div>
     
     )
-  }
 }
 
 const mapStateToProps = (state) => {

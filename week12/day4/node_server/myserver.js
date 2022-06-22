@@ -10,6 +10,6 @@ const server = http.createServer((req, res) => {
             '<p>This is my third response</p>')
 });
 
-server.listen(3000,()=>{
-    console.log('server listening to port 3000');
-});
+// server.listen(3000,()=>{
+//     console.log('server listening to port 3000');
+// });

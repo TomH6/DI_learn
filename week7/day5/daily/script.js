@@ -8,11 +8,13 @@ let str2 = b.toLowerCase().split('').filter(function(e){return e.trim() != ''; }
 console.log(`${str1} = ${str2}`)
 if(str1 === str2){
        console.log("True");
+       
     } else { 
        console.log("False");
  }
 }
-isAnagram("The Morse Code","Here come dots");
+isAnagram("Astronomer","Moon starer");
+
 
 
 // "Astronomer" is an anagram of "Moon starer"

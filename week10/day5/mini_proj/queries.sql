@@ -73,7 +73,7 @@ FROM public.employees LIMIT 10;
 -- Write a query to display the first_name, last_name and salary of all employees 
 -- whose salary is between $10,000 and $15,000.
 #1
-SELECT first_name, last_name, salary FROM public.employees WHERE salary > 10000 AND salary < 15000;
+SELECT first_name, last_name, salary FROM public.employees BETWEEN 10000 AND 15000;
 
 -- Write a query to display the first_name, last_name and hire date of all employees who were hired in 1987.
 #2

@@ -32,4 +32,4 @@
     },
 }
 console.log(JSON.stringify(marioGame))
-console.log(JSON.stringify(marioGame, null, 2))
+console.log(JSON.stringify(marioGame,null,2))

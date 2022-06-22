@@ -6,16 +6,16 @@
 //     .then(result => console.log(result));
 // ;
 
-async function getInfo() {
-    try{
-      let response = await fetch("https://swapi.dev/api/starships/9/");
-      let parsedRes =  await response.json()
-      console.log(parsedRes) 
-    }catch(err){
-      console.error(err);
-    }
-}
-getInfo();
+// let  getInfo = async()=> {
+//     try{
+//       let response = await fetch("https://swapi.dev/api/starships/9/");
+//       let parsedRes =  await response.json()
+//       console.log(parsedRes) 
+//     }catch(err){
+//       console.error(err);
+//     }
+// }
+// getInfo();
 
 // EX 2
 function resolveAfter2Seconds() {
@@ -27,11 +27,17 @@ function resolveAfter2Seconds() {
 }
 
 async function asyncCall() {
-    console.log('calling');
-    let result = await resolveAfter2Seconds();
-    console.log(result);
+    let result =  resolveAfter2Seconds();
+    result
+    .then(console.log)
+    .then(e=>console.log('calling'));
 }
 
 asyncCall();
 // Console will show "calling" - after 2000ms it will also say "resolved"
+
+
+
+
+
 

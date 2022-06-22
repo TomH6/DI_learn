@@ -10,9 +10,9 @@ const server = http.createServer((req, res)=> {
     console.log('Waiting for request..');
     res.end(`Hi there at the frontend! My module is: ${c}`);
 });
-server.listen(3000, ()=>{
-    console.log('listening to port 3000');
-});
+// server.listen(3000, ()=>{
+//     console.log('listening to port 3000');
+// });
 const dateTime = require('./main_two');
 
 let httpB = require("http");
