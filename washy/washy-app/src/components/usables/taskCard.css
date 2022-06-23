@@ -1,0 +1,160 @@
+
+:root {
+    --clr-neutral-900: hsl(207, 19%, 19%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-accent-400: hsl(142, 90%, 61%);
+}
+
+ *,
+ *::before,
+ *::after {
+     box-sizing: border-box;
+}
+
+.body {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-height: 66vh;
+    place-items: center;
+    line-height: 1.6;
+}
+
+.card {
+    color:var(--clr-neutral-900);
+    background-size: cover;
+    padding: 10rem 3rem 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+    max-height: 30rem;
+}
+
+.card:hover,
+.card:focus-within {
+    transform: scale(1.05);
+    
+}
+
+.card-content {
+    --padding: .5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(0 0% 0% / 0.3) 20%,
+        hsl(0 0% 0% / 1)
+    );
+}
+
+.card-title {
+    position: relative;
+    width: max-content;
+}
+
+.card-title::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: calc(var(--padding) * -1);
+    bottom: -2px;
+    width: calc(100% + var(--padding));
+    background: var(--clr-accent-400);
+    transform-origin: left;
+    transition: transform 500ms ease;
+}
+
+.card:hover .card-title::after,
+.card:focus-within .card-title::after {
+    transform: scaleX(1);
+}
+
+.card-body {
+    color: rgb(255 255 255 /0.85);
+    background-size: cover;
+    
+}
+
+.card_button {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    color: hsl(207, 19%, 9%);
+    background-color: #ccc;
+    padding: 0.5em 1.25em ;
+    border-radius: 0.5rem;
+}
+.button {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    width: 50%;
+    color: hsl(207, 19%, 9%);
+    background-color: #ccc;
+    margin-top: 5px;
+    padding: 0.5em 1.25em ;
+    border-radius: 0.5rem;
+}
+.button_dis {
+    cursor: pointer;
+    display: none;
+    text-decoration: none;
+    width: 50%;
+    color: hsl(207, 19%, 9%);
+    background-color: #ccc;
+    padding: 0.5em 1.25em ;
+    border-radius: 0.5rem;
+}
+
+
+
+.button:hover,
+.button:focus,
+.card_button{
+    background-color: var(--clr-accent-400);
+}
+
+.card_disable {
+    
+    opacity: 0.6;
+    color:var(--clr-neutral-900);
+    background-size: cover;
+    padding: 10rem 3rem 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+}
+
+
+@media (hover) {
+    .card-content {
+        transform: translateY(65%);
+        transition: transform 500ms ease;
+    }
+
+    .card:hover .card-content,
+    .card:focus-within .card-content {
+        transform: translateY(0);
+        transition-delay: 500ms;
+    }
+
+    .card:focus-within .card-content {
+        transition-duration: 0ms;
+    }
+
+    .card-content > *:not(.card-title) {
+        opacity: 0;
+        transition: tranform 500ms linear;
+    }
+
+    .card:hover .card-content > *:not(.card-title),
+    .card:focus-within .card-content > *:not(.card-title) {
+        opacity: 1;
+        transition-delay: 1000ms;
+    }
+
+    .card-title::after {
+        transform: scaleX(0);
+    }
+}

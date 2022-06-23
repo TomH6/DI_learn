@@ -1,0 +1,18 @@
+/** ABOUT **/
+
+.about_cont{
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 4rem;
+    border: 2px solid black;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 10px rgb(0, 33, 65);
+  }
+  .about_header {
+    padding-bottom: 1rem;
+  }
+  

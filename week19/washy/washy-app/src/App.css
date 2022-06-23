@@ -1,0 +1,259 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap'); */
+/* * NAVBAR *
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  min-height: calc(100vh - 70px);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 8vh;
+  background: rgb(0, 33, 65);
+}
+.nav__brand {
+  text-transform: uppercase;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+.nav__toggler {
+  display: none;
+}
+.nav__toggler div {
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: rgb(204, 204, 204);
+  transition: 0.3s ease-in;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__toggler {
+    display: block;
+    cursor: pointer;
+  }
+  .nav__menu {
+    position: fixed;
+    top: 7vh;
+    right: 0;
+    height: 93vh;
+    width: 50vw;
+    background: rgb(0, 33, 65);
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+  }
+}
+/* Active Class */
+/* .nav__active {
+  transform: translateX(0%);
+} */
+
+/* Toggle Icon Animation */
+
+/* .toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+} */ */
+
+/** LOG-IN**/
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign_form {
+  margin-top: 6rem;
+  padding: 4rem;
+  border: 2px solid black;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 10px rgb(0, 33, 65);
+}
+.form_header {
+  margin-bottom: 3rem;
+}
+.form_item {
+  margin: 1rem;
+}
+.form_btn {
+  margin-top: 2rem;
+}
+
+.task_card {
+  display:inline-block;
+  margin: 1rem;
+  width: 30%;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 60px;
+  box-shadow: 5px 10px rgb(0, 33, 65);
+}
+
+/** FOOTER **/
+.footer {
+  background: rgb(0, 33, 65);
+  position:absolute;
+  bottom:-1;
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_text {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+}
+
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    color: #fff;
+} */
+
+/* body {
+    min-height: 100vh;
+    background-color: dodgerblue;
+} */
+
+/* .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  padding: 1rem 0.5rem;
+} */
+
+
+section {
+    width: 100%;
+    max-width: 420px;
+    min-height: 400x;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+
+a, a:visited {
+    color: #fff;
+}
+
+/* input[type="text"],
+input[type="password"],
+button,
+textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+}
+
+label,
+button {
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+}
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.hide {
+    display: none;
+}
+
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.line {
+    display: inline-block;
+} */
+
+.hide {
+  display: none;
+}

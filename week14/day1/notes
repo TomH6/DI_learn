@@ -1,0 +1,22 @@
+To start a REACT project:
+
+1. $ npx create-react-app name_of_project
+
+2. move projects directory: cd name_of_project
+
+  2.2 $ npm start
+
+    2.3 A browser tab will appear on localhost:3000 (your react app)
+
+3. You need to put any JS and CSS files inside the src folder. 
+ otherwise webpack won’t see them!
+
+  3.2 You need to put any HTML files inside the public folder.
+
+
+public/: This folder holds development files, such as public/index.html. The index file is displayed on localhost:3000 when the app is in development or on a domain that is hosted elsewhere. The default setup handles relating this index.html with all the JavaScript from src/.
+
+
+
+
+

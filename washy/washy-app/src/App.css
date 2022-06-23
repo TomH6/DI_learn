@@ -1,0 +1,86 @@
+
+/** LOG-IN**/
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign_form {
+  margin-top: 6rem;
+  padding: 4rem;
+  border: 2px solid black;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 10px rgb(0, 33, 65);
+}
+.form_header {
+  margin-bottom: 3rem;
+}
+.form_item {
+  margin: 1rem;
+}
+.form_btn {
+  margin-top: 2rem;
+}
+
+.task_card {
+  display:inline-block;
+  margin: 1rem;
+  width: 30%;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 60px;
+  box-shadow: 5px 10px rgb(0, 33, 65);
+}
+
+/** FOOTER **/
+.footer {
+  background: rgb(0, 33, 65);
+  position:absolute;
+  bottom:-1;
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_text {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+}
+
+
+section {
+    width: 100%;
+    max-width: 420px;
+    min-height: 400x;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+
+a, a:visited {
+    color: #fff;
+}
+
+
+.hide {
+  display: none;
+}

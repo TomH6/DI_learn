@@ -1,0 +1,15 @@
+when we want to work with redux we:
+
+1. $npm i redux react-redux
+2. make redux folder.
+    2.1 create reducer.js
+    2.2 create actions.js
+
+3. move the state from the app to the reducer
+
+4. build actions.
+
+5. create the store in index.js.
+import createStore, Provider, reducer.
+
+6. connect your components.

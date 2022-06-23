@@ -1,0 +1,1 @@
+[{"item":"Player 1","amount":"12"},{"item":"carrots","amount":"6"},{"item":"olives","amount":"12"}]

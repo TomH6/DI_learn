@@ -1,0 +1,23 @@
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book_store {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+  align-items: auto;
+  align-content: start
+}
+.book_store:after {
+  display: block;
+  margin: 10px;
+  flex: 999 999 auto;
+}
+.book {
+  flex: 0 0 auto;
+  margin: 10px;
+}
